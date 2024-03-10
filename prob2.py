@@ -1,6 +1,6 @@
-strings = ['abba','bbb','a', 'bb']
+strings = ['abba','bbb','a', 'ab']
 
-# Sort the list based on the length of strings 
-sorted_strings = sorted(strings, key = lambda x: len(x))
+# Sorting the list based on length and then alphabetically
+sorted_strings = sorted(strings, key=lambda x: (len(x), x))
 
-print(sorted_strings)
+print("Sorted list:", sorted_strings)
